@@ -1,0 +1,82 @@
+-- show database list
+show databases;
+
+-- create a database
+create database sadik;
+-- use database
+use sadik;
+
+
+
+-- create a table
+create table student(
+    sid int,
+    sname varchar(255)
+);
+
+-- show tables list
+show tables
+
+-- show description of table
+desc student;
+
+
+-- insert  a data into table
+INSERT INTO student(sid, sname) VALUES (1,'ANIL');
+
+INSERT INTO student(sid, sname) VALUES (2,'Nani'),(2,'Kumar');
+
+
+INSERT INTO student VALUES (3,'Sadik');
+
+
+INSERT INTO student(sname,sid) VALUES ('MOM',4);
+
+
+INSERT INTO student(sid) VALUES (5);
+-- string default value is NULL
+INSERT INTO student(sname) VALUES ('Hello');
+-- int default value is 0
+
+
+
+-- select query
+select * from student;
+
+select sid,sname from student;
+
+select sname, sid from student;
+
+select sname as MyNAME, sid as MYID from student;
+
+
+select sname from student;
+
+
+
+-- select with where clause
+SELECT * FROM `student` WHERE sid=2;
+
+SELECT * FROM `student` WHERE sname  = 'MOM';  or SELECT * FROM `student` WHERE sname LIKE 'MOM';
+
+-- update a student 
+UPDATE student set sid = 20 WHERE sname LIKE 'KUMAR';
+
+UPDATE `student` SET `sid`=10 WHERE sname like 'MOM';
+
+
+UPDATE `student` SET sname = 'HELLO-1' WHERE `sid`=10;
+
+update student SET sname = 'MOM';
+
+-- delete
+
+DELETE FROM `student` WHERE sid = 10;
+
+
+DELETE FROM `student`;
+
+
+-- drop a table
+
+DROP TABLE student;
