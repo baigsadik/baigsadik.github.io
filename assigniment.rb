@@ -1,0 +1,9 @@
+x=5
+y=5
+puts(x=y)
+puts(x+=y)
+puts(x-=y)
+puts(x*=y)
+puts(x/=y)
+puts(x%=y)
+puts(x**=y)
