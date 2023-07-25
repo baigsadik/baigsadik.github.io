@@ -1,0 +1,8 @@
+x=20
+y=10
+puts("relational oprater")
+puts(x<y)
+puts(x>y)
+puts(x==y)
+puts(x<=y)
+puts(x>=y)
