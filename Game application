@@ -1,0 +1,298 @@
+//Gamming application
+//Gamming application
+package pack5;
+import java.util.Scanner;
+public class Game {
+	Scanner obj=new Scanner(System.in);
+	void meth1()
+	{
+		System.out.println("                     .---------------------------------.");
+		System.out.println("                     | 🎮 Welcome to GOLDRUSH GAMES 🎮 |");
+		System.out.println("                     .---------------------------------.");
+		System.out.println("\n            🤖You Have To Creat an Account   TO PLAY  GAMES🤖");
+
+        System.out.print("\n Enter your name: ");
+        String Name =obj.nextLine();
+
+        System.out.print("\n Enter your date: ");
+        long Date = obj.nextLong();
+        obj.nextLine();
+
+        System.out.print("\n Enter your Address: ");
+        String Address =  obj.nextLine();
+        System.out.print("\n Creat a password: ");
+        int Password=obj.nextInt();
+
+        System.out.print("\n Do you want to see your account? Press 3 or 1: ");
+        int view = obj.nextInt();
+
+        if (view == 3) {
+        	System.out.println(".--------------------------------------.");
+            System.out.println("| Name: "  +Name +"                     ");
+            System.out.println("| Date: "  +Date +"                     ");
+            System.out.println("| Address: "+Address+"                  ");
+            System.out.println("| password: "+Password+"                ");
+            System.out.println(".--------------------------------------.");
+        }
+        else if(view==1)
+        {
+        	System.out.println("\n Thanku for creating an Account okay lets paly the game");
+        }
+         System.out.print("  \n Enter username :  ");
+         String username=obj.nextLine();
+         obj.next();
+		System.out.print("  Enter password:  ");
+        int password=obj.nextInt();
+        
+        	 System.out.println("              .---------------------------.");
+             System.out.println("              |      ☺️ Welcome"+Name+"☺️   |");
+             System.out.println("              .---------------------------.");
+             System.out.println("         .---------------------------------------.");
+             System.out.println("         | The games which are available to play |");
+             System.out.println("         .---------------------------------------.");
+             System.out.println("         | 1) Physics quiz                       |");
+             System.out.println("                                                  ");
+             System.out.println("         | 2) Maths quiz                         |");
+             System.out.println("                                                  ");
+
+             System.out.println("         | 3) English quiz                       |");
+             System.out.println("                                                  ");
+
+             System.out.println("         | 4) Social quiz                        |");
+             System.out.println("                                                  ");
+
+             System.out.println("         | 5) Python quiz                        |");
+             System.out.println("                                                  ");
+
+             System.out.println("         | 6) HTML quiz                          |");
+             System.out.println("                                                  ");
+
+             System.out.println("         | 7) MY SQL quiz                        |");
+             System.out.println("                                                   ");
+
+             System.out.println("         | 8) Kaun Banega Crorepati              |");
+             System.out.println("         .---------------------------------------.");
+        	
+        	
+        	    }
+       
+         
+	
+
+	
+      void meth2()
+      {
+    	  System.out.println("                                          ");
+    	  System.out.println("  Enter the game number you want to Play: ");
+    	  int Choose=obj.nextInt();
+    	  switch(Choose)
+    	  {
+    	     case 1:
+    	    	 System.out.println("    🥳The Game is avelable🥳   \n ");
+    	    	  System.out.println("Here is Your First quation");
+    	    	  
+    	    	 
+    	    	 break;
+    	     case 2:
+    	    	 System.out.println("    🥳The Game is avelable🥳    ");
+    	    	 break;
+    	     case 3:
+    	    	 System.out.println("    🥳The Game is avelable🥳    ");
+    	    	 break;
+    	     case 4:
+    	    	 System.out.println("    🥳The Game is avelable🥳    ");
+    	    	 break;
+    	     case 5:
+    	    	 System.out.println("    🥳The Game is avelable🥳    ");
+    	    	 break;
+    	     case 6:
+    	    	 System.out.println("    🥳The Game is avelable🥳    ");
+    	    	 break;
+    	     case 7:
+    	    	 System.out.println("    🥳The Game is avelable🥳    ");
+    	    	 break;
+    	     case 8:
+    	    	 System.out.println("          🥳The Game is avelable🥳");
+    	    	 if(Choose==8) {
+    	    	  System.out.println("       ================================================================================================");
+    	       	  System.out.println("       ||Discpration-:In this game, you need knowledge of books and general knowledge.               ||");
+    	       	  System.out.println("       ||Here you will get a question and four options, and you have to choose one option.           ||");
+    	       	  System.out.println("       || You will get three life lines. If you don't know the answer, you can choose a life line.   ||");       
+    	       	  System.out.println("       ================================================================================================");
+      	    	  System.out.println(" \n   🎉🎉lets start the Game🎉🎉");
+ 
+    	    	 }
+    	    	 break;
+    	    	 default:
+    	    		 System.out.println("Sorry Eight Games is only Avlible");
+    	    	 
+    	  }
+      }
+      void meth3()
+      {
+    	  System.out.println("  Press Enter to START THE GMAE");
+    	  String start=(String) obj.nextLine();
+    	  if(start.equals(start))
+    	  System.out.println("               Timer On Please        ");
+    	  System.out.println("    _______________________________________"+"        "+"     you Have three life lines");
+    	  System.out.println("   | 1)who is the Prime Minister of india? |"+"       "+"           50-50");
+    	  System.out.println("   |_______________________________________|"+"       "+"           DilarDost");
+    	  System.out.println("                                         "+"       "+"           audience Pole");
+    	  System.out.println("         A)dhropathi murmur"+"      "+"b) Modhi");
+    	  System.out.println("         c)Chandra babu"    +"          "+"d)pawen kalyan"+"\n");
+    	  System.out.print(" Choos an option: ");
+          char c = obj.next().charAt(0);
+          if(c=='b')
+          {
+        	  System.out.println(" currect answer Congurlation");
+        	  System.out.println("\n For Score bord press 2: ");
+        	  int score=obj.nextInt();
+        	  if(score==2)
+        	  {
+        		System.out.println("     ---------------------------------------");
+        		System.out.println("    |              Score Bord               |");
+        		System.out.println("    |        _______________________        |");
+        		System.out.println("    |    player name:Sadik    Score:1       |");
+        		System.out.println("    |                                       |");
+        		System.out.println("    |        Exit            Playagain      |");
+        		System.out.println("     --------------------------------------- ");
+        	  }
+
+        	  System.out.println("   Here your next qutions on the Screen please");
+        	  System.out.println("              Timer On Please         ");
+        	  System.out.println("    __________________________________");
+        	  System.out.println("   |   2)who is the Invanted  java?   |");
+        	  System.out.println("   |__________________________________|");
+        	  System.out.println("      a)James Gosling"+"        "+"b)JJ Thomson");
+        	  System.out.println("      c)Dennis M. Ritchie"+"     "+"d)Charles Babbage"+"\n");
+        	  System.out.print(" Choos an option: ");
+              char b = obj.next().charAt(0);
+              if(b=='a')
+              {
+            	  System.out.println(" currect answer Congurlation");
+            	 }   
+
+          }
+       
+ }
+      void meth4()
+      {
+    	  System.out.println("             Timer On Plase         ");
+    	  System.out.println("     __________________________________");
+    	  System.out.println("    |   3)how many keywords in java?   |");
+    	  System.out.println("    |__________________________________|");
+    	  System.out.println("          a)32"+"         "+"b) 63");
+    	  System.out.println("          c)52"+"         "+"d)72"+"\n");
+    	  System.out.print("Choos an option: ");
+          char c = obj.next().charAt(0);
+          if(c=='c')
+          {
+        	  System.out.println("   currect answer Congurlation  ");
+        	  System.out.println("\n For Score bord press 2 or Choos 0 to play: ");
+        	  int score=obj.nextInt();
+        	  if(score==2)
+        	  {
+          		System.out.println("     ---------------------------------------");
+          		System.out.println("    |              Score Bord               |");
+          		System.out.println("    |        _______________________        |");
+          		System.out.println("    |    player name:Sadik    Score:3       |");
+          		System.out.println("    |                                       |");
+          		System.out.println("    |        Exit            Play Again     |");
+          		System.out.println("     --------------------------------------- ");
+          	  }
+        	  else if(score==0)
+              {
+            	  System.out.println("   Here your next qutions on the Screen please");
+            	  System.out.println("              Timer On Plase         ");
+            	  System.out.println("   __________________________________________");
+            	  System.out.println("  |   4)what is the extatantion of java file?|");
+            	  System.out.println("  |__________________________________________|");
+            	  System.out.println("       a).html"+"      "+"b).java");
+            	  System.out.println("       c).c"+"         "+"d).c++");
+            	  System.out.print(" Choos an option: ");
+                  char b = obj.next().charAt(0);
+                  if(b=='b')
+                  {
+                	  System.out.println(" Currect answer Congurlation");
+                  }
+
+          }
+            }
+    	  
+      }
+      void meth5()
+      {
+    	  System.out.println("                             Timer On Plase         ");
+    	  System.out.println("       __________________________________________________________________");
+    	  System.out.println("      |   5)What is a correct syntax to output \"Hello World\" in Java?  |");
+    	  System.out.println("      |__________________________________________________________________|");
+    	  System.out.println("\n         a)print(Hello World)"+"         "+"b)println(Hello World)");
+    	  System.out.println("           c)prt(Hello World)"+"           "+"d)System.out.pritln(Hello World)");
+    	  System.out.println("Choos an option: ");
+          char c = obj.next().charAt(0);
+          if(c=='d')
+          {
+        	  System.out.println("   currect answer Congurlation  ");
+        	  System.out.println("\n For Score bord press 2 or Choos 0 to play: ");
+        	  int score=obj.nextInt();
+        	  if(score==2)
+        	  {
+          		System.out.println("     ---------------------------------------");
+          		System.out.println("    |              Score Bord               |");
+          		System.out.println("    |        _______________________        |");
+          		System.out.println("    |    player name:Sadik    Score:5       |");
+          		System.out.println("    |                                       |");
+          		System.out.println("    |        Exit            Play Again     |");
+          		System.out.println("     --------------------------------------- ");
+          	  }
+        	  else if(score==0)
+              {
+            	  System.out.println(" here your next qutions on the Screen please");
+            	  System.out.println("              Timer On Plase         ");
+            	  System.out.println(" __________________________________________");
+            	  System.out.println("|   6)How to allow a user to input in Java?|");
+            	  System.out.println("|__________________________________________|");
+            	  System.out.println("\na)Scanner"+"        "+"b)*io");
+            	  System.out.println("  c)util package"+"   "+"d)defualtpackage");
+            	  System.out.print("Choos an option: ");
+                  char b = obj.next().charAt(0);
+                  if(b=='a')
+                  {
+                	  System.out.println("currect answer Congurlation");
+                  }
+                  System.out.println("          (.---------------------------.)");
+                  System.out.println("          (|                           |)");
+                  System.out.println("          (|                           |)");
+                  System.out.println("          (|         GAME OVER         |)");
+                  System.out.println("          (|                           |)");
+                  System.out.println("          (.---------------------------.)");
+                  System.out.println("\n For Score bord press 2 or Choos 0 to play: ");
+            	  int mark=obj.nextInt();
+            	  if(mark==2)
+            	  {
+              		System.out.println("     ---------------------------------------");
+              		System.out.println("    |              Score Bord               |");
+              		System.out.println("    |        _______________________        |");
+              		System.out.println("    |    player name:Sadik    Score:6       |");
+              		System.out.println("    |                                       |");
+              		System.out.println("    |        Exit            Play Again     |");
+              		System.out.println("     --------------------------------------- ");
+              	  }
+            }
+          }
+      }
+   
+    
+public static void main(String[] args) {
+		new Game().meth1();
+		new Game().meth2();
+		new Game().meth3();
+		new Game().meth4();
+		new Game().meth5();
+		//new Game().meth6();
+
+
+
+
+	}
+}
